@@ -1,0 +1,14 @@
+{
+	"UPDATE (2-table-lookup)": {
+		
+		"scope": "snowflake-sql",
+		"prefix": "UPDATE (2-table-lookup)",
+		"body": [
+	 		"UPDATE TABLE A"
+			,"SET A.COL=B.UPDATE_COL"
+			,"FROM LOOKUP_TABLE B"
+			,"WHERE A.COL=B.LOOKUP_COL;"
+		],
+		"description": "UPDATE (2-table-lookup)" 
+	}
+}
